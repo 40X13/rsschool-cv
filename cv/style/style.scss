@@ -1,0 +1,117 @@
+@import '_nullstyle';
+
+// $margin-basic-blocks: 20px;
+
+// переменная нужна, но не в этом случае 
+body {
+	background-color: #e8e8e8;
+}
+
+.container {
+	padding: 40px;
+	background-color: #fff;
+	max-width: 700px;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+
+	>div {
+		display: flex;
+		flex-direction: column;
+		line-height: 120%;
+	}
+
+	img {
+		width: 150px;
+		margin-bottom: 5px;
+	}
+
+	p {
+		font-weight: bold;
+	}
+
+	a {
+		font-weight: normal;
+	}
+
+}
+
+.main {
+	margin-top: 30px;
+	text-align: center;
+
+	h1 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	h2 {
+		font-size: 16px;
+		text-align: start;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		margin-top: 10px;
+		font-size: 14px;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	li {
+		list-style-type: disc;
+		margin-left: 10px;
+		text-align: start;
+	}
+}
+
+// try to grid
+.content-block {
+	margin-top: 30px;
+
+	>div {
+		display: flex;
+		line-height: 120%;
+
+		>div,
+		ul,
+		h3 {
+			flex: 1;
+
+
+			span {
+				font-weight: bold;
+			}
+		}
+
+		>div:nth-child(odd) {
+			text-align: right;
+		}
+
+		>div:nth-child(even),
+		h3,
+		ul {
+			text-align: left;
+			padding-left: 10px;
+		}
+
+
+	}
+
+}
+
+.period {
+	text-decoration: underline;
+}
+
+.position {
+	font-weight: bold;
+}
