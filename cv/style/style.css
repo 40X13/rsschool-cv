@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 12px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #e8e8e8;
+}
+
+.container {
+  padding: 40px;
+  background-color: #fff;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.header > div {
+  display: flex;
+  flex-direction: column;
+  line-height: 120%;
+}
+.header img {
+  width: 150px;
+  margin-bottom: 5px;
+}
+.header p {
+  font-weight: bold;
+}
+.header a {
+  font-weight: normal;
+}
+
+.main {
+  margin-top: 30px;
+  text-align: center;
+}
+.main h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main h2 {
+  font-size: 16px;
+  text-align: start;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.main h3 {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.main li {
+  list-style-type: disc;
+  margin-left: 10px;
+  text-align: start;
+}
+
+.content-block {
+  margin-top: 30px;
+}
+.content-block > div {
+  display: flex;
+  line-height: 120%;
+}
+.content-block > div > div,
+.content-block > div ul,
+.content-block > div h3 {
+  flex: 1;
+}
+.content-block > div > div span,
+.content-block > div ul span,
+.content-block > div h3 span {
+  font-weight: bold;
+}
+.content-block > div > div:nth-child(odd) {
+  text-align: right;
+}
+.content-block > div > div:nth-child(even),
+.content-block > div h3,
+.content-block > div ul {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.period {
+  text-decoration: underline;
+}
+
+.position {
+  font-weight: bold;
+}
